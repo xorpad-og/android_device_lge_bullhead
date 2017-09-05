@@ -251,13 +251,6 @@ PRODUCT_PACKAGES += \
     nanoapp_cmd
 endif
 
-# sensor utilities (only for userdebug and eng builds)
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PACKAGES += \
-    nanotool \
-    sensortest
-endif
-
 PRODUCT_PACKAGES += \
     keystore.msm8992 \
     gatekeeper.msm8992
